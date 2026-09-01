@@ -1,0 +1,19 @@
+{
+  "name": "smart-meeting-scheduler-monorepo",
+  "version": "1.0.0",
+  "description": "Full-stack AI-Powered Meeting Scheduler with Smart Time Optimization",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "npm start --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "npm run build --prefix frontend"
+  },
+  "keywords": ["meeting-scheduler", "ai-scheduling", "calendar-sync", "react", "express"],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
